@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SafeguardKit_Example' do
+  pod 'SafeguardKit', :path => '../'
+
+  target 'SafeguardKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
