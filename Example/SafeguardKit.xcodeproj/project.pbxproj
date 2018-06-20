@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		1B465164420EA78B65796D38 /* Pods-SafeguardKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeguardKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafeguardKit_Example/Pods-SafeguardKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		23265E6C82411A9A52C58A28 /* SafeguardKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SafeguardKit.podspec; path = ../SafeguardKit.podspec; sourceTree = "<group>"; };
+		23265E6C82411A9A52C58A28 /* SafeguardKit.podspec */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = SafeguardKit.podspec; path = ../SafeguardKit.podspec; sourceTree = "<group>"; };
 		41E2786788E396C17B275A2D /* Pods_SafeguardKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeguardKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44BA3A4BFB3D8E7016FA77F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		44BA3A4BFB3D8E7016FA77F4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5EC3F4D28896279BD293FA63 /* Pods-SafeguardKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeguardKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeguardKit_Tests/Pods-SafeguardKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SafeguardKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeguardKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A20A32646B16AF0281D2061 /* Pods-SafeguardKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeguardKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeguardKit_Example/Pods-SafeguardKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9651D1E7A21CBC66778A5818 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9651D1E7A21CBC66778A5818 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ABD27BBC3B366BC34016A669 /* Pods-SafeguardKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeguardKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafeguardKit_Tests/Pods-SafeguardKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC27D52DDAFCD5504C4E5ADC /* Pods_SafeguardKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeguardKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Jiaguanglei0418;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = HD8JGW3VRL;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -485,9 +488,11 @@
 			baseConfigurationReference = 1B465164420EA78B65796D38 /* Pods-SafeguardKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HD8JGW3VRL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SafeguardKit/SafeguardKit-Prefix.pch";
 				INFOPLIST_FILE = "SafeguardKit/SafeguardKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,9 +505,11 @@
 			baseConfigurationReference = 7A20A32646B16AF0281D2061 /* Pods-SafeguardKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HD8JGW3VRL;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SafeguardKit/SafeguardKit-Prefix.pch";
 				INFOPLIST_FILE = "SafeguardKit/SafeguardKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

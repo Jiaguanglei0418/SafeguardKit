@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SafeguardKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SafeguardKit.'
+  s.summary          = 'SafeguardKit make your app stronger'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = 'SafeguardKit 提供了库函数, 能够防动态注入(DYLD_INSERT_LIBRARIES); 能够防动态调试(debugserver, LLDB, breakpoint); 能够防重签名(MonkeyDev), 能够防静态分析常量, 能够防 Class_dump, 能够防 dumpdecrypted 砸壳'
 
   s.homepage         = 'https://github.com/Jiaguanglei0418/SafeguardKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
