@@ -41,11 +41,7 @@ void  checkCodesign(NSString *id){
                 [defaults setObject:appIdentifier forKey:@"key"];
                 [defaults synchronize];
             }else{
-                asm(
-                    "mov X0,#0\n"
-                    "mov w16,#1\n"
-                    "svc #0x80"
-                    );
+                exit(0);
             }
             break;
         }
